@@ -72,7 +72,7 @@ export default class Shared extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            focused: false,
+            focus: false,
         }
     }
     render() {
@@ -83,7 +83,7 @@ export default class Shared extends Component {
             ]}>
                 {
                     (!!this.props.txtLabel) ?
-                        <Text style={this.state.focused ? styles.labelFocus : styles.label}>
+                        <Text style={this.state.focused ? this.props.labelStyleFocus : this.props.labelStyle}>
                         {this.props.txtLabel}
                         </Text>
                         : <View/>
@@ -91,7 +91,7 @@ export default class Shared extends Component {
                 }
                 <TextInput
                     style={[
-                        this.state.focus ? styles.inputFocus : styles.input,
+                        this.state.focused ? styles.inputFocus : styles.input,
                         this.props.inputStyle,
                     ]}
                     multiline={this.props.multiline}
