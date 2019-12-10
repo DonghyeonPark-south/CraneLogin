@@ -1,0 +1,29 @@
+dependencies: \
+  /Users/parkdonghyeon/ProjectNow/Crane/node_modules/react-native/Libraries/TypeSafety/RCTConvertHelpers.mm \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Target\ Support\ Files/RCTTypeSafety/RCTTypeSafety-prefix.pch \
+  /Users/parkdonghyeon/ProjectNow/Crane/node_modules/react-native/Libraries/TypeSafety/RCTConvertHelpers.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Headers/Public/FBLazyVector/FBLazyVector/FBLazyVector.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Headers/Public/FBLazyVector/FBLazyVector/FBLazyIterator.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Folly/folly/Optional.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Folly/folly/Portability.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Folly/folly/portability/Config.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Folly/folly/CPortability.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Folly/folly/Traits.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Folly/folly/Utility.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Folly/folly/lang/Exception.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Folly/folly/CppAttributes.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Headers/Public/React-Core/React/RCTConvert.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Headers/Public/React-Core/React/RCTAnimationType.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Headers/Public/React-Core/React/RCTBorderStyle.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Headers/Public/React-Core/React/RCTDefines.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Headers/Public/React-Core/React/RCTInspectorDevServerHelper.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Headers/Public/React-Core/React/RCTPackagerConnection.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Headers/Public/React-Core/React/RCTLog.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Headers/Public/React-Core/React/RCTAssert.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Headers/Public/React-Core/React/RCTUtils.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Headers/Public/React-Core/React/RCTPointerEvents.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Headers/Public/React-Core/React/RCTTextDecorationLineType.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Headers/Public/Yoga/yoga/Yoga.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Headers/Public/Yoga/yoga/YGEnums.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Headers/Public/Yoga/yoga/YGMacros.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Headers/Public/Yoga/yoga/YGValue.h

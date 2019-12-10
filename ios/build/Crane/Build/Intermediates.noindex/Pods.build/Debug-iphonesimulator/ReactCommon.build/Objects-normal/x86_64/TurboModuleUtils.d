@@ -1,0 +1,15 @@
+dependencies: \
+  /Users/parkdonghyeon/ProjectNow/Crane/node_modules/react-native/ReactCommon/turbomodule/core/TurboModuleUtils.cpp \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Target\ Support\ Files/ReactCommon/ReactCommon-prefix.pch \
+  /Users/parkdonghyeon/ProjectNow/Crane/node_modules/react-native/ReactCommon/turbomodule/core/TurboModuleUtils.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Folly/folly/Optional.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Folly/folly/Portability.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Folly/folly/portability/Config.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Folly/folly/CPortability.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Folly/folly/Traits.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Folly/folly/Utility.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Folly/folly/lang/Exception.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Folly/folly/CppAttributes.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Headers/Public/React-jsi/jsi/jsi.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/ios/Pods/Headers/Public/React-jsi/jsi/jsi-inl.h \
+  /Users/parkdonghyeon/ProjectNow/Crane/node_modules/react-native/ReactCommon/jscallinvoker/ReactCommon/JSCallInvoker.h
