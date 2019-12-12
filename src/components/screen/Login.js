@@ -10,6 +10,7 @@ import React, {Component} from 'react';
 import {
   SafeAreaView,
   StyleSheet,
+  ScrollView,
   View,
   Text,
   Image,
@@ -24,84 +25,93 @@ import { LOGO } from '../../utils/Icons'
 import { colors } from '../../utils/Styles'
 
 export default class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            email: '',
-            password: '',
-            isLoggingin: false,
-        }
-    }
+  static navigationOptions = {
+    headerStyle: {
+      borderBottomWidth: 0,
+      backgroundColor: 'white',
+    },
+  };
+
+  constructor(props) {
+      super(props);
+      this.state = {
+          email: '',
+          password: '',
+          isLoggingin: false,
+      };
+  }
     render() {
         return (
             <>
-            <StatusBar barStyle="dark-content" />
-            <SafeAreaView>
-                <View style={styles.constainer}>
-                    <View style={styles.iconWrapper}>
-                        <Image style={styles.icon} source={LOGO}></Image>
-                        <Text style={styles.iconTxt}>Hello</Text>
-                    </View>
-                    <View style={styles.wrapper} >
-                        <View style={styles.wrapperInput}>
-                            <TextInput
-                                txtLabel='this is label'
-                                style={{marginTop: 60}}
-                                txt={this.state.email}
-                                txtHint='Please write email address.'
-                                placeHolderTextColor={colors.blueyGray}
-                                onTextChagned={(text) => {
-                                    this.onTextChanged('EMAIL', text);
-                                }} 
-                            />
-                            <TextInput
-                                style={{marginTop: 8}}
-                                txt={this.state.password}
-                                txtHint='Please write password.'
-                                placeHolderTextColor={colors.blueyGray}
-                                onTextChagned={(text) => {
-                                    this.onTextChanged('PASSWORD', text);
-                                }}
-                                isPassword
-                            />
-                        </View>
-                        <View style={styles.viewBtnWrapper}>
-                          <Button
-                            containerStyle={{ flex: 1 }}
-                            onPress={() => {
-                              this.props.navigation.navigate('Signup');
-                            }}
-                            style={styles.btnSignup}
-                            textStyle={styles.txtSignup}
-                            >Sign Up</Button>
-                            <View style={{ width: 8 }} />
-                          <Button
-                            containerStyle={{ flex: 1 }}
-                            isLoading={this.state.isLoggingin}
-                            onPress={() => {
-                              this.setState({
-                                isLoggingin: true
-                              }, () => {
-                                setTimeout( () => {
-                                  this.setState({
-                                    isLoggingin: false,
-                                  });
-                                }, 3000);
-                              })
-                            }}
-                            style={styles.btnLogin}
-                            textStyle={styles.txtLogin}
-                            >Login</Button>
-                        </View>
-                    <TouchableOpacity
-                        style={styles.touchForgotPw}
-                    >
-                        <Text style={styles.txtForgotPw}>Forgot password?</Text>
-                    </TouchableOpacity>
-                    <Text style={styles.txtCopyright}>Copyright by platcube.com</Text>
-                    </View>
-                </View>
-            </SafeAreaView>
+            <ScrollView>
+              <StatusBar barStyle="dark-content" />
+              <SafeAreaView>
+                  <View style={styles.constainer}>
+                      <View style={styles.iconWrapper}>
+                          <Image style={styles.icon} source={LOGO}></Image>
+                          <Text style={styles.iconTxt}>Hello</Text>
+                      </View>
+                      <View style={styles.wrapper} >
+                          <View style={styles.wrapperInput}>
+                              <TextInput
+                                  txtLabel='this is label'
+                                  style={{marginTop: 60}}
+                                  txt={this.state.email}
+                                  txtHint='Please write email address.'
+                                  placeHolderTextColor={colors.blueyGray}
+                                  onTextChagned={(text) => {
+                                      this.onTextChanged('EMAIL', text);
+                                  }} 
+                              />
+                              <TextInput
+                                  style={{marginTop: 8}}
+                                  txt={this.state.password}
+                                  txtHint='Please write password.'
+                                  placeHolderTextColor={colors.blueyGray}
+                                  onTextChagned={(text) => {
+                                      this.onTextChanged('PASSWORD', text);
+                                  }}
+                                  isPassword
+                              />
+                          </View>
+                          <View style={styles.viewBtnWrapper}>
+                            <Button
+                              containerStyle={{ flex: 1 }}
+                              onPress={() => {
+                                this.props.navigation.navigate('Signup');
+                              }}
+                              style={styles.btnSignup}
+                              textStyle={styles.txtSignup}
+                              >Sign Up</Button>
+                              <View style={{ width: 8 }} />
+                            <Button
+                              containerStyle={{ flex: 1 }}
+                              isLoading={this.state.isLoggingin}
+                              onPress={() => {
+                                this.setState({
+                                  isLoggingin: true
+                                }, () => {
+                                  setTimeout( () => {
+                                    this.setState({
+                                      isLoggingin: false,
+                                    });
+                                  }, 3000);
+                                })
+                              }}
+                              style={styles.btnLogin}
+                              textStyle={styles.txtLogin}
+                              >Login</Button>
+                          </View>
+                      <TouchableOpacity
+                          style={styles.touchForgotPw}
+                      >
+                          <Text style={styles.txtForgotPw}>Forgot password?</Text>
+                      </TouchableOpacity>
+                      <Text style={styles.txtCopyright}>Copyright by platcube.com</Text>
+                      </View>
+                  </View>
+              </SafeAreaView>
+            </ScrollView>
             </>
         );
     };
@@ -130,11 +140,9 @@ const styles = StyleSheet.create({
     alignSelf: 'stretch',
   },
   iconWrapper: {
-
     position: 'absolute',
     top: 144,
     left: 40,
-
 
     flexDirection: 'column',
     alignItems: 'flex-start',

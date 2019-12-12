@@ -1,0 +1,16 @@
+import { createStackNavigator } from 'react-navigation-stack';
+
+import Search from '../screen/Search';
+import MainTabNavigator, { MainTabNavigationOptions } from './MainTapNavigator';
+
+
+export default createStackNavigator(
+  {
+    MainTabNavigator: {
+      screen: MainTabNavigator,
+      navigationOptions: MainTabNavigationOptions,
+    },
+    Search,
+  },
+);
+

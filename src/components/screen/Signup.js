@@ -59,6 +59,7 @@ const styles = StyleSheet.create({
   },
 })
 export default class Signup extends Component {
+  
   constructor(props) {
     super(props);
     this.state = {

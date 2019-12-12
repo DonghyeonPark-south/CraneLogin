@@ -94,6 +94,7 @@ export default class Shared extends Component {
                         this.state.focused ? styles.inputFocus : styles.input,
                         this.props.inputStyle,
                     ]}
+                    autoCapitalize='none'
                     multiline={this.props.multiline}
                     onChangeText={this.props.onTextChagned}
                     value={this.props.txt}
