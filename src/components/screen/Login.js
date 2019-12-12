@@ -18,6 +18,8 @@ import {
   StatusBar,
 } from 'react-native';
 
+import axios from 'axios';
+
 import TextInput from '../shared/TextInput';
 import Button from '../shared/Button';
 
@@ -90,13 +92,19 @@ export default class App extends Component {
                               onPress={() => {
                                 this.setState({
                                   isLoggingin: true
-                                }, () => {
-                                  setTimeout( () => {
-                                    this.setState({
-                                      isLoggingin: false,
-                                    });
-                                  }, 3000);
-                                })
+                                });
+                                axios.post('http://192.168.0.136:9001/api/login', {
+                                  email: this.state.email,
+                                  password: this.state.password
+                                }).then((res) => {
+                                  console.log(`code:` + res.data.code);
+                                  console.log(`message:` + res.data.message);
+                                  console.log(`token:` + res.data.token);
+                                  alert(res.data.message);
+                                  this.setState({isLoggingin: false});
+                                }).catch ((err) => {
+                                  console.log(err);
+                                });
                               }}
                               style={styles.btnLogin}
                               textStyle={styles.txtLogin}
