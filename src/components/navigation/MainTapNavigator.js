@@ -80,7 +80,6 @@ const MyNavigator = createMaterialTopTabNavigator(
     },
   },
 );
-
 class Page extends React.Component {
   static router = MyNavigator.router;
   render() {
